@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.romance.literacy_project.community.DTO.CmuDAO">
+
+    <select id="getAllCmuList" resultType="com.romance.literacy_project.community.DTO.CmuDTO">
+        SELECT * FROM question_board
+    </select>
+
+
+    <insert id="insertCmu" parameterType="com.romance.literacy_project.community.DTO.CmuDTO">
+        INSERT INTO question_board (question_title, question_txt, question_date, mem_nick)
+        VALUES (#{question_title}, #{question_txt}, #{question_date}, #{mem_nick})
+    </insert>
+
+    <update id="updateCmu" parameterType="com.romance.literacy_project.community.DTO.CmuDTO">
+        UPDATE question_board
+        SET question_title = #{question_title}, question_txt = #{question_txt}, question_date = #{question_date}, mem_nick = #{mem_nick}
+        WHERE question_no = #{question_no}
+    </update>
+
+    <delete id="deleteCmu" parameterType="int">
+        DELETE FROM question_board WHERE question_no = #{question_no}
+    </delete>
+
+
+    <select id="getCmuByNo" parameterType="int" resultType="com.romance.literacy_project.community.DTO.CmuDTO">
+        SELECT * FROM question_board WHERE question_no = #{question_no}
+    </select>
+</mapper>

@@ -1,9 +1,12 @@
 package com.romance.literacy_project;
 
+
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+@MapperScan("com.romance.literacy_project.community.DTO")
 public class LiteracyProjectApplication {
 
     public static void main(String[] args) {
