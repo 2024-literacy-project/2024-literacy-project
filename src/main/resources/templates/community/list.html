@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>게시판 목록</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<h1>게시판 목록</h1>
+<table border="1">
+  <thead>
+  <tr>
+    <th>No.</th>
+    <th>제목</th>
+    <th>작성자</th>
+    <th>작성일</th>
+    <th>관리</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="cmu : ${cmuList}">
+    <td th:text="${cmu.question_no}">1</td>
+    <td><a th:href="@{/community/detail/{id}(id=${cmu.question_no})}" th:text="${cmu.question_title}">제목</a></td>
+    <td th:text="${cmu.mem_nick}">작성자</td>
+    <td th:text="${cmu.question_date}">2024-05-22</td>
+    <td>
+      <a th:href="@{/community/update/{id}(id=${cmu.question_no})}">수정</a>
+      <a th:href="@{/community/delete/{id}(id=${cmu.question_no})}" onclick="return confirm('정말 삭제하시겠습니까?');">삭제</a>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<a href="/community/add">새 글 작성</a>
+</body>
+</html>

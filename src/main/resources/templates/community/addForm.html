@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>새 글 작성</title>
+</head>
+<body>
+<h1>새 글 작성</h1>
+<form action="/community/add" method="post" th:object="${cmu}">
+  <div>
+    <label for="question_title">제목:</label>
+    <input type="text" id="question_title" name="question_title" th:field="*{question_title}">
+  </div>
+  <div>
+    <label for="mem_nick">작성자:</label>
+    <input type="text" id="mem_nick" name="mem_nick" th:field="*{mem_nick}">
+  </div>
+  <!-- 기타 필드 추가 -->
+  <div>
+    <button type="submit">게시글 작성</button>
+  </div>
+</form>
+</body>
+</html>
