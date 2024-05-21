@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+</head>
+<body>
+    <h1>메인</h1>
+    <div>
+        <h3>글.</h3>
+        <hr>
+<!--        <p th:text="${listContent[1].contents_topic}"></p>-->
+        <button onclick="location.href='content'" th:text="${listContent[0].contents_topic}"></button>
+        <hr>
+    </div>
+
+    <div>
+        <h3> 퀴즈요. </h3>
+        <hr>
+        <p th:text="${listQuiz[0].quiz_question}"></p>
+        <p th:text="${listQuiz[0].quiz_select1}"></p>
+        <p th:text="${listQuiz[0].quiz_select2}"></p>
+        <hr>
+    </div>
+
+    <div>
+        <h3> 시요. </h3>
+        <hr>
+        <p th:text="${listPoem[0].poem_title}"></p>
+        <p th:text="${listPoem[0].poem_txt}"></p>
+        <p th:text="${listPoem[0].poet}"></p>
+        <hr>
+    </div>
+</body>
+</html>

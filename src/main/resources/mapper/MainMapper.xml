@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.romance.literacy_project.main.model.dao.MainDAO">
+
+    <select id="getAllPoemList" resultType="com.romance.literacy_project.main.model.dto.PoemDTO">
+        select * from today_poem where DATE(date) = DATE(NOW());
+    </select>
+
+    <select id="getAllContentList" resultType="com.romance.literacy_project.main.model.dto.ContentDTO">
+        select * from today_contents where DATE(date) = DATE(NOW());
+    </select>
+
+    <select id="getAllQuizList" resultType="com.romance.literacy_project.main.model.dto.QuizDTO">
+        select * from today_quiz where DATE(date) = DATE(NOW());
+    </select>
+
+</mapper>
