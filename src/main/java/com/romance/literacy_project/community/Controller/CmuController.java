@@ -1,6 +1,7 @@
 package com.romance.literacy_project.community.Controller;
 
 import com.romance.literacy_project.community.DTO.CmuDTO;
+import com.romance.literacy_project.community.DTO.CommentDTO;
 import com.romance.literacy_project.community.Service.CmuService;
 import com.romance.literacy_project.community.Service.CmuServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
 
 
@@ -33,6 +35,8 @@ public class CmuController {
         try {
             int no = Integer.parseInt(question_no);
             model.addAttribute("cmu", cmuServiceImpl.getCmuByNo(no));
+            List<CommentDTO> comments = cmuServiceImpl.getCommentsByquestion_no(no); // 댓글 조회
+            model.addAttribute("comments", comments); // 모델에 댓글 추가
             return "community/detail";
         } catch (NumberFormatException e) {
             // 숫자가 아닌 값이 입력된 경우의 처리 로직
@@ -83,6 +87,12 @@ public class CmuController {
     public String updateCmu(@ModelAttribute CmuDTO cmu) {
         cmuServiceImpl.updateCmu(cmu);
         return "redirect:/community/list";
+    }
+
+    @PostMapping("/addComment")
+    public String addComment(@ModelAttribute CommentDTO commentDTO) {
+        cmuServiceImpl.insertComment(commentDTO);
+        return "redirect:/detail/{question_no}";
     }
 
 

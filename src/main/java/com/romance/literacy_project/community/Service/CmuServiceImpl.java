@@ -2,6 +2,7 @@ package com.romance.literacy_project.community.Service;
 
 import com.romance.literacy_project.community.DTO.CmuDAO;
 import com.romance.literacy_project.community.DTO.CmuDTO;
+import com.romance.literacy_project.community.DTO.CommentDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +14,7 @@ public class CmuServiceImpl implements CmuService {
 
     @Autowired
     private CmuDAO cmuDAO;
+
 
     /* 리스트 */
     @Override
@@ -50,5 +52,21 @@ public class CmuServiceImpl implements CmuService {
         CmuDTO cmuDTO = cmuDAO.findById(question_no);
         return Optional.ofNullable(cmuDTO);
     }
+
+    @Override
+    public List<CommentDTO> getCommentsByquestion_no(int question_no) {
+        return cmuDAO.selectCommentsByquestion_no(question_no);
+    }
+
+    @Override
+    public void insertComment(CommentDTO commentDTO) {
+
+    }
+
+    @Override
+    public void deleteComment(int comment_no) {
+
+    }
+
 
 }

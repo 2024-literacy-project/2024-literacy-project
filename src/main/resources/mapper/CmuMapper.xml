@@ -36,4 +36,11 @@
         SELECT * FROM question_board WHERE question_no = #{question_no}
     </select>
 
+    <select id="selectCommentsByquestion_no" resultType="com.romance.literacy_project.community.DTO.CommentDTO">
+        SELECT comment_no, question_no, comment_txt, comment_date, mem_nick
+        FROM comment_board
+        WHERE question_no = #{question_no}
+    </select>
+
+
 </mapper>
