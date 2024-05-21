@@ -3,7 +3,7 @@ html{
 
 }
 body{
-    margin: 0 auto;
+    margin: 0px;
     text-align: center;
 
     /*background-image: url("../img/nangman.jpeg");*/
@@ -14,6 +14,7 @@ body{
 h1{
     /*background-color: skyblue;*/
     color: white;
+    padding-top: 17px;
 }
 section{
     display: inline-block;
@@ -24,20 +25,22 @@ section{
     height: 150px;
     background-image: url("../img/nangman.jpeg");
     background-size: cover;
+    margin-bottom: 20px;
 }
 /**/
 .Qboard{
     border: 1px solid lightgray;
     /*width: 90%;*/
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     /*text-align: center;*/
     /*display: flex;*/
     /*justify-content: center;*/
     border-radius: 20px;
     background-color: white;
+
+    margin-left: 20px;
+    margin-right: 20px;
 
     box-shadow: 5px 5px 5px gray;
 }
@@ -50,7 +53,7 @@ section{
     /*box-shadow: 5px 5px 5px gray;*/
     border-radius: 10px;
 
-    width: 90%;
+    width: 95%;
     margin-top: 20px;
 }
 
@@ -64,18 +67,23 @@ section{
 /* thead */
 .table-list-1{
     width: 20px;
+    font-size: 14px;
 }
 .table-list-2{
     width: 200px;
+    font-size: 14px;
 }
 .table-list-3{
     width: 100px;
+    font-size: 14px;
 }
 .table-list-4{
     width: 130px;
+    font-size: 14px;
 }
 .table-list-5{
     width: 100px;
+    font-size: 13px;
 }
 
 /* tbody */
@@ -86,7 +94,63 @@ td{
 .btn{
     display: inline-block;
     justify-content: center;
+    border: none;
+    background-color: white;
+    font-size: 10px;
 }
+
+
+
+/*list 내용*/
+.list-bigBox{
+    border: 1px solid lightgray;
+    margin: 18px;
+    background-color: white;
+    border-radius: 4%;
+    box-shadow: 3px 3px 3px lightgray;
+}
+
+.list-box{
+    border: 1px solid lightgray;
+    margin: 19px;
+    border-radius: 4%;
+    padding-bottom: 20px;
+}
+.list-div{
+    padding-left: 15px;
+    padding-right: 12px;
+}
+
+.list-title {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 3px;
+}
+
+.list-txt {
+    font-size: 12px;
+    text-align: left;
+    display: inline-block;
+    width: 250px;
+    border: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.list-txt-box{
+    position: relative;
+    text-align: left;
+}
+
+.list-nick{
+    font-size: 10px;
+    text-align: right;
+    opacity: 50%;
+}
+
+
 
 /**/
 th, td{
@@ -96,6 +160,12 @@ th, td{
 
 /* button */
 .new-contents-btn{
-    margin-top: 20px;
-    /*text-decoration: none;*/
+    /*margin-top: 20px;*/
+    margin-bottom: 15px;
+    margin-left: 15px;
+    border: 2px solid #D9D9D9;
+    font-size: 13px;
+    color: #5C5C5C;
+    background-color: rgba(242, 255, 255, 0.5);
+    border-radius: 8px;
 }

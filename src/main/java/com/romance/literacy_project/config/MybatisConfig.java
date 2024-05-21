@@ -10,7 +10,7 @@ import org.springframework.core.io.ClassPathResource;
 import javax.sql.DataSource;
 
 @Configuration
-@MapperScan("com.romance.literacy_project.main.model")
+@MapperScan("com.romance.literacy_project")
 public class MybatisConfig {
 
     @Bean

@@ -42,6 +42,22 @@
                 <p class="quiz-select2" th:text="${listQuiz[0].quiz_select2}"></p>
             </div>
 
+            <button onclick="btnClick()">정답보기</button>
+            <p>정답은~~~~~?</p>
+            <div id='my-div' th:text="${listQuiz[0].quiz_answer}"></div>
+
+            <script>
+                function btnClick() {
+                    const mydiv = document.getElementById('my-div');
+
+                    if(mydiv.style.display === 'none') {
+                        mydiv.style.display = 'block';
+                    }else {
+                        mydiv.style.display = 'none';
+                    }
+                }
+            </script>
+
 
         </div>
 
@@ -62,8 +78,8 @@
         <hr>
 
         <div class="btn">
-            <button class="question-button">질문방</button>
-            <button class="community-button">대화장</button>
+            <button class="question-button" onclick="location.href='community/list'">질문방</button>
+<!--            <button class="community-button">대화장</button>-->
         </div>
 
         <hr>
