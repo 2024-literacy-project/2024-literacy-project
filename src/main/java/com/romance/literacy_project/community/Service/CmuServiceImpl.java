@@ -46,7 +46,8 @@ public class CmuServiceImpl implements CmuService {
     /* 특정 ID로 조회 */
     @Override
     public Optional<CmuDTO> findById(int question_no) {
-        CmuDTO cmuDTO = cmuDAO.getCmuByNo(question_no);
+//        CmuDTO cmuDTO = cmuDAO.getCmuByNo(question_no);
+        CmuDTO cmuDTO = cmuDAO.findById(question_no);
         return Optional.ofNullable(cmuDTO);
     }
 

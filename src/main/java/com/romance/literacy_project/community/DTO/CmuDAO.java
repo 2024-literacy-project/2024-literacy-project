@@ -19,4 +19,5 @@ public interface CmuDAO {
     void updateCmu(CmuDTO cmu);
 
 
+    CmuDTO findById(int questionNo);
 }

@@ -3,11 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>게시판 목록</title>
-  <link rel="stylesheet" href="/css/styles.css">
+<!--  <link rel="stylesheet" href="../../static/css/list.css">-->
+<!--  <link rel="stylesheet" href="list.css">-->
+  <link rel="stylesheet" type="text/css" th:href="@{/css/list.css}"/>
 </head>
 <body>
 <h1>게시판 목록</h1>
+
 <table border="1">
+  <!-- thead -->
   <thead>
   <tr>
     <th>No.</th>
@@ -17,6 +21,8 @@
     <th>관리</th>
   </tr>
   </thead>
+
+  <!-- tbody -->
   <tbody>
   <tr th:each="cmu : ${cmuList}">
     <td th:text="${cmu.question_no}">1</td>
@@ -29,7 +35,10 @@
     </td>
   </tr>
   </tbody>
+
 </table>
+
+
 <a href="/community/add">새 글 작성</a>
 </body>
 </html>
