@@ -70,7 +70,7 @@ public class CmuController {
     /* 업데이트 페이지 이동 */
     @GetMapping("/update/{question_no}")
     public String showUpdateForm(@PathVariable int question_no, Model model) {
-        Optional<CmuDTO> cmuDTO = cmuService.findById(question_no);
+        Optional<CmuDTO> cmuDTO = cmuServiceImpl.findById(question_no);
         if (cmuDTO.isPresent()) {
             model.addAttribute("cmu", cmuDTO.get());
             return "community/update"; // 업데이트 폼을 보여줄 HTML 파일명
