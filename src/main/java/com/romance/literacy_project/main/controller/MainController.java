@@ -2,18 +2,22 @@ package com.romance.literacy_project.main.controller;
 
 import com.romance.literacy_project.main.model.dto.ContentDTO;
 import com.romance.literacy_project.main.model.dto.PoemDTO;
+import com.romance.literacy_project.main.model.dto.QuizAnswerDTO;
 import com.romance.literacy_project.main.model.dto.QuizDTO;
 import com.romance.literacy_project.main.service.MainService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.Date;
 import java.util.List;
 
-@RestController
+@Controller
 public class MainController {
+
+    @Autowired
     private final MainService mainService;
 
     public MainController(MainService mainService) {
@@ -34,6 +38,18 @@ public class MainController {
         return mv;
     }
 
+    @PostMapping("submit")
+    public String submitQuizAnswer(@RequestParam String selected_option,
+                                   @RequestParam String mem_nick, Model model) {
+        List<QuizDTO> listQuiz = mainService.getAllQuizList();
+        boolean is_correct = selected_option.equals(listQuiz.get(0).getQuiz_answer());
+
+        model.addAttribute("is_correct", is_correct);
+        model.addAttribute("listQuiz", listQuiz);
+        return "quizResult";
+
+    }
+
     @RequestMapping("/content")
     public ModelAndView content() throws Exception {
         ModelAndView mv = new ModelAndView("main/content");
@@ -41,7 +57,6 @@ public class MainController {
         mv.addObject("listContent", listContent);
         return mv;
     }
-
 
 
 }

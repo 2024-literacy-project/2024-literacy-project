@@ -1,35 +1,69 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Main</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}" />
 </head>
+
 <body>
-    <h1>메인</h1>
-    <div>
-        <h3>글.</h3>
-        <hr>
-<!--        <p th:text="${listContent[1].contents_topic}"></p>-->
-        <button onclick="location.href='content'" th:text="${listContent[0].contents_topic}"></button>
-        <hr>
-    </div>
+    <header>
+        <h1>「 浪漫 」</h1>
+    </header>
 
-    <div>
-        <h3> 퀴즈요. </h3>
-        <hr>
-        <p th:text="${listQuiz[0].quiz_question}"></p>
-        <p th:text="${listQuiz[0].quiz_select1}"></p>
-        <p th:text="${listQuiz[0].quiz_select2}"></p>
-        <hr>
-    </div>
+    <main>
+        <!-- content -->
+        <div class="content-box">
+            <h4 class="today-content">오늘의 글</h4>
+            <!--        <p th:text="${listContent[1].contents_topic}"></p>-->
+            <div class="title-button">
+                <button class="title" onclick="location.href='content'" th:text="${listContent[0].contents_topic}"></button>
+            </div>
+        </div>
+        <br>
 
-    <div>
-        <h3> 시요. </h3>
         <hr>
-        <p th:text="${listPoem[0].poem_title}"></p>
-        <p th:text="${listPoem[0].poem_txt}"></p>
-        <p th:text="${listPoem[0].poet}"></p>
+
+        <!-- quiz -->
+        <div class="quiz">
+
+            <h4 class="today-quiz">오늘의 퀴즈</h4>
+
+            <form action="submit" method="post">
+                <p th:text="${listQuiz[0].quiz_question}"></p>
+                <p th:text="${listQuiz[0].quiz_select1}"></p>
+                <p th:text="${listQuiz[0].quiz_select2}"></p>
+            </form>
+
+        </div>
+
         <hr>
-    </div>
+
+        <!-- poem -->
+        <div class="poem">
+
+            <h4 class="today-poem">오늘의 시</h4>
+
+            <div class="box">
+                <p class="poem-title" th:text="${listPoem[0].poem_title}"></p>
+                <p class="poem-txt" th:text="${listPoem[0].poem_txt}"></p>
+                <p class="poet" th:text="${listPoem[0].poet}"></p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="btn">
+            <button class="question-button">질문방</button>
+            <button class="community-button">대화장</button>
+        </div>
+
+        <hr>
+
+    </main>
+
+    <footer>
+        <h5>나는야 footer</h5>
+    </footer>
 </body>
 </html>

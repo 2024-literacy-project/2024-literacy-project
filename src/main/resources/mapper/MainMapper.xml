@@ -16,4 +16,5 @@
         select * from today_quiz where DATE(date) = DATE(NOW());
     </select>
 
+
 </mapper>
