@@ -9,7 +9,7 @@
 <form action="/community/add" method="post" th:object="${cmu}">
   <div>
     <label for="question_title">제목:</label>
-    <input type="text" id="question_title" name="question_title" th:field="*{question_title}">
+    <input type="text" id="question_title" name="question_title" th:field="*{cmu.question_title}">
   </div>
   <div>
     <label for="mem_nick">작성자:</label>

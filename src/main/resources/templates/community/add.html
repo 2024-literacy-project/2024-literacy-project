@@ -3,31 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <title>새 글 작성</title>
-  <link rel="stylesheet" href="/css/styles.css">
+<!--  <link rel="stylesheet" href="/css/styles.css">-->
+  <link rel="stylesheet" type="text/css" th:href="@{/css/add.css}"/>
 </head>
 <body>
+<!-- ========== header ========== -->
+<header th:replace="~{/common/header :: headerFragment}">
+  <h1>HEADER</h1>
+</header>
+
+<!-- ========== contents ========== -->
 <h1>새 글 작성</h1>
 <form action="/community/add" method="post">
-  <table border="1">
-    <tr>
-      <th>제목</th>
-      <td><input type="text" name="question_title" required></td>
-    </tr>
-    <tr>
-      <th>작성자</th>
-      <td><input type="text" name="mem_nick" required></td>
-    </tr>
-    <tr>
-      <th>내용</th>
-      <td><textarea name="question_txt" rows="10" required></textarea></td>
-    </tr>
-    <tr>
-      <th>날짜</th>
-      <td><input type="text" name="question_date" required></td>
-    </tr>
-  </table>
-  <button type="submit">작성</button>
-  <a href="/community/list">취소</a>
+
+<section>
+  <div class="Qboard">
+    <div class="Qboard-child">
+      <div>
+
+        <table class="Qboard-list-table">
+          <tr>
+            <th>제목</th>
+            <td><input type="text" name="question_title" class="tbl-title" required></td>
+          </tr>
+          <tr>
+            <th>작성자</th>
+            <td><input type="text" name="mem_nick" class="tbl-mem" required></td>
+          </tr>
+          <tr>
+            <th>내용</th>
+            <td><textarea name="question_txt" rows="10" class="tbl-txt" required></textarea></td>
+          </tr>
+          <tr>
+            <th>날짜</th>
+            <td><input type="text" name="question_date" placeholder="2024-01-01" class="tbl-date" required></td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
+
+    <div class="div-btn">
+      <button type="submit">작성</button>
+      <button>
+        <a href="/community/list">취소</a>
+      </button>
+    </div>
+
+    <!--            -->
+  </div>
+</section>
+
 </form>
+
+<!-- ========== footer ========== -->
+<footer th:insert="~{/common/footer :: footerFragment}">
+  <h1>FOOTER</h1>
+</footer>
+
 </body>
 </html>

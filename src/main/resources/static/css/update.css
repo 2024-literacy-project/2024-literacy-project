@@ -1,12 +1,8 @@
-html{
-    width: 393px;
-
-}
 body{
     margin: 0 auto;
     text-align: center;
 
-    /*background-image: url("../img/nangman.jpeg");*/
+    background-image: url("../img/nangman.jpeg");
     /*background-size: auto 300px;*/
 
 }
@@ -18,12 +14,6 @@ h1{
 section{
     display: inline-block;
     justify-content: center;
-}
-.image{
-    width: 100%;
-    height: 150px;
-    background-image: url("../img/nangman.jpeg");
-    background-size: cover;
 }
 /**/
 .Qboard{
@@ -61,41 +51,40 @@ section{
     /*border-top: 1px solid gray;*/
 }
 
-/* thead */
-.table-list-1{
-    width: 20px;
-}
-.table-list-2{
-    width: 200px;
-}
-.table-list-3{
-    width: 100px;
-}
-.table-list-4{
-    width: 130px;
-}
-.table-list-5{
-    width: 100px;
-}
-
-/* tbody */
-td{
-    height: 50px;
-}
-
-.btn{
-    display: flex;
-    justify-content: center;
-}
-
 /**/
+th{
+    width: 150px;
+}
+td{
+    width: 400px;
+    height: 30px;
+}
 th, td{
     border-bottom: 1px solid lightgray;
     padding: 10px;
 }
 
-/* button */
-.new-contents-btn{
+/**/
+.tbl-title{
+    width: 280px;
+    height: 20px;
+}
+.tbl-mem{
+    width: 280px;
+    height: 20px;
+}
+.tbl-txt{
+    width: 280px;
+    height: 200px;
+
+}
+.tbl-date{
+    width: 280px;
+    height: 20px;
+}
+
+/*btn*/
+.div-btn{
     margin-top: 20px;
-    /*text-decoration: none;*/
+    margin-bottom: 20px;
 }
