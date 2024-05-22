@@ -1,4 +1,4 @@
-<div align = center> <img src ="https://github.com/2024-literacy-project/2024-literacy-project/assets/129252557/eb271755-76d0-4bd3-aaf5-5cf3eadfaa03"><h1>낭만독해🌊</h1> </div>
+<div align = center> <img src ="https://github.com/2024-literacy-project/2024-literacy-project/assets/129252557/eb271755-76d0-4bd3-aaf5-5cf3eadfaa03"><h1>🌊 낭만독해</h1> </div>
 
 ## 프로젝트 주제: 문해력 
 <h3> (文解力) "글을 읽고 이해하는 능력" <h3>
@@ -8,9 +8,9 @@
 
 ## 1. 프로그램 기획
 
- ## 지역사회 문제점 시장 조사
+ ### ①.지역사회문제점 및 시장 조사
 
-#### 학생들의 국어 학업성취도 해마다 감소:
+ #### 학생들의 국어 학업성취도 해마다 감소:
  - 경제협력개발기구(OECD) 보고서에 따르면 2021년 한국 학생들의 디지털 정보에 대한 사실과 의견 식별률은 25.6%로 회원국 평균 
    (47.4%)에 크게 미달했다. .
  #### 스마트폰 사용으로 글보다 영상을 접하는 시간이 증가:
@@ -21,7 +21,7 @@
 
 
 
-### 프로젝트 소개
+### ②.프로젝트 소개
 
   - **매일 업데이트 글 추천**: 
     - 문해력 향상을 목표로, 사용자들이 매일 새로운 글과 시를 접하고, 다양한 장르와 스타일의 글을 접할 수 있다. 자신의 한정되어 있던 문학 범위를 넓힌다.
@@ -46,11 +46,11 @@
 ## 2.채택한 개발 기술과 브랜치 전략
 
 
-  ###   개발 환경
+ ###   ① 개발 환경
  ###  프로그래밍 언어 및 프레임워크
   
 
-#### Spring boot
+#### Spring boot
 -   Spring Boot Java 기반의 오픈 소스 경량 프레임워크로, Spring 프레임워크 위에서 동작
 #### thymeleaf
 - Thymeleaf는 서버 사이드 자바 템플릿 엔진으로, XML/XHTML/HTML5 컨텐츠를 웹 애플리케이션에서 동적으로 생성하는데 사용.
@@ -62,16 +62,16 @@
 -  웹 페이지의 레이아웃, 색상, 글꼴 등의 스타일을 정의하는 스타일 시트 언어
 
 
-### 버전 및 이슈관리
+### ② 버전 및 이슈관리
   -  Github, Github Issues, Github Project
    <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
   
   <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
   
 
-### 협업 툴
+### ③ 협업 툴
  <div align=left>
- <img src="https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"></div>
+ <img src="https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"></div> 
  <div align=left> <a href="https://www.notion.so/Find-Dog-2f081d1cdc6c46f0b27c2a591f2be77d?pvs=4">
  <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white"></div>
  </a><div align=left>
@@ -83,7 +83,7 @@
     <img src="https://github.com/DBTeamP/Find-Dog/assets/135615995/5e61746a-f6f2-4912-a31e-ca8b9755d8fe" alt="사진" width="30" height="30"> Google Meet
 </div>
 
-###  브랜치전략
+###  ④ 브랜치전략
 - 각자 맡은 기능에따라 브랜치를 생성하여
 - 브랜치명은 feature/기능/(자기 깃허브 닉네임)
 - feature/ : 기능단위로 독립적인 개발환경을 위해 사용.
@@ -91,7 +91,7 @@
 
 ## 3. 시장 조사
 
-#### 학생들의 국어 학업성취도 해마다 감소:
+ #### 학생들의 국어 학업성취도 해마다 감소:
  - 경제협력개발기구(OECD) 보고서에 따르면 2021년 한국 학생들의 디지털 정보에 대한 사실과 의견 식별률은 25.6%로 회원국 평균 
    (47.4%)에 크게 미달했다. .
  #### 스마트폰 사용으로 글보다 영상을 접하는 시간이 증가:
@@ -101,13 +101,14 @@
 
 
 ## 4. 유사 프로그램 분석
-### 1. 이지펜 (ezpen)
+### ① 이지펜 (ezpen)
   <div align="left"> <img src="https://github.com/2024-literacy-project/2024-literacy-project/assets/129252557/d96717a8-8e95-43cc-943c-8cb5aeedfd4a)" alt="사진" width="150" height="150">
+
 - 문학,비문학과 같은 교육적인 글만 제공 
 - 정적인 콘텐츠 제공
 
 
-### 차별화 전략
+### ② 차별화 전략
  - 1. 매일 바뀌는 독특한 콘텐츠 제공하여 사용자들에게 새로운 경험 제공
 
 - 2. 다양한 글의 형태 제공: 호김심 자극, 간단한 문제풀이 콘텐츠 제공
@@ -131,16 +132,16 @@
    
 ## 6. 프로그램 기능 및 동작 방식 
 
-## 1.메인 게시판 기능
+## ① 메인 게시판 기능
 
 
-## 2.글 상세 페이지 게시판 기능
+## ② 글 상세 페이지 게시판 기능
 
 
-## 3.커뮤니티 게시판 기능
+## ③ 커뮤니티 게시판 기능
 
 
-## 4.게시판 댓글  기능
+## ④ 게시판 댓글  기능
 
 
 
