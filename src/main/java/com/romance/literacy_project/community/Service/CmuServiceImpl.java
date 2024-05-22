@@ -54,18 +54,18 @@ public class CmuServiceImpl implements CmuService {
     }
 
     @Override
-    public List<CommentDTO> getCommentsByquestion_no(int question_no) {
-        return cmuDAO.selectCommentsByquestion_no(question_no);
+    public List<CommentDTO> getCommentsByQuestion_no(int question_no) {
+        return cmuDAO.selectCommentsByQuestion_no(question_no);
     }
 
     @Override
     public void insertComment(CommentDTO commentDTO) {
-
+        cmuDAO.insertComment(commentDTO);
     }
 
     @Override
     public void deleteComment(int comment_no) {
-
+        cmuDAO.deleteComment(comment_no);
     }
 
 

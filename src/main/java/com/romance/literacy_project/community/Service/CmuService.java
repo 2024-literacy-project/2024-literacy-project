@@ -27,7 +27,7 @@ public interface CmuService {
 
         /*댓글 기능*/
         /*댓글 목록 기능*/
-        List<CommentDTO> getCommentsByquestion_no(int question_no);
+        List<CommentDTO> getCommentsByQuestion_no(int question_no);
 
         /*댓글 추가 기능*/
         void insertComment(CommentDTO commentDTO);

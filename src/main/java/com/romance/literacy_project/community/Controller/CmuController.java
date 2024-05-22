@@ -35,7 +35,7 @@ public class CmuController {
         try {
             int no = Integer.parseInt(question_no);
             model.addAttribute("cmu", cmuServiceImpl.getCmuByNo(no));
-            List<CommentDTO> comments = cmuServiceImpl.getCommentsByquestion_no(no); // 댓글 조회
+            List<CommentDTO> comments = cmuServiceImpl.getCommentsByQuestion_no(no); // 댓글 조회
             model.addAttribute("comments", comments); // 모델에 댓글 추가
             return "community/detail";
         } catch (NumberFormatException e) {
@@ -88,11 +88,17 @@ public class CmuController {
         cmuServiceImpl.updateCmu(cmu);
         return "redirect:/community/list";
     }
-
+/*-----------댓글-----------------------*/
     @PostMapping("/addComment")
     public String addComment(@ModelAttribute CommentDTO commentDTO) {
         cmuServiceImpl.insertComment(commentDTO);
-        return "redirect:/detail/{question_no}";
+        return "redirect:/community/detail/" + commentDTO.getQuestion_no(); // 댓글을 추가한 후 해당 게시글 페이지로 리다이렉트
+    }
+
+    @GetMapping("/deleteComment/{comment_no}")
+    public String deleteComment(@PathVariable ("comment_no")int comment_no) {
+        cmuServiceImpl.deleteComment(comment_no);
+        return "redirect:/community/list";
     }
 
 

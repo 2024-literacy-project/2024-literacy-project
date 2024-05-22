@@ -36,11 +36,20 @@
         SELECT * FROM question_board WHERE question_no = #{question_no}
     </select>
 
-    <select id="selectCommentsByquestion_no" resultType="com.romance.literacy_project.community.DTO.CommentDTO">
+    <select id="selectCommentsByQuestion_no" resultType="com.romance.literacy_project.community.DTO.CommentDTO">
         SELECT comment_no, question_no, comment_txt, comment_date, mem_nick
         FROM comment_board
         WHERE question_no = #{question_no}
     </select>
 
 
+    <insert id="insertComment" parameterType="com.romance.literacy_project.community.DTO.CommentDTO">
+        INSERT INTO comment_board (question_no, comment_txt, comment_date, mem_nick)
+        VALUES (#{question_no}, #{comment_txt}, #{comment_date}, #{mem_nick})
+    </insert>
+
+    <!--댓글 삭제-->
+    <delete id="deleteComment" parameterType="int">
+        DELETE FROM comment_board WHERE comment_board.comment_no = #{comment_no}
+    </delete>
 </mapper>
