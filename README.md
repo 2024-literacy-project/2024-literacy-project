@@ -143,7 +143,76 @@
 
   ```
  
-
+   ├── main
+    │   ├── java
+    │   │   └── com
+    │   │       └── romance
+    │   │           └── literacy_project
+    │   │               ├── LiteracyProjectApplication.java
+    │   │               ├── community
+    │   │               │   ├── Config
+    │   │               │   │   └── MybatisConfig.java
+    │   │               │   ├── Controller
+    │   │               │   │   ├── CmuController.java
+    │   │               │   │   └── TestController.java
+    │   │               │   ├── DTO
+    │   │               │   │   ├── CmuDAO.java
+    │   │               │   │   ├── CmuDTO.java
+    │   │               │   │   ├── CommentDTO.java
+    │   │               │   │   ├── TestDAO.java
+    │   │               │   │   └── TestDTO.java
+    │   │               │   └── Service
+    │   │               │       ├── CmuService.java
+    │   │               │       ├── CmuServiceImpl.java
+    │   │               │       └── TestService.java
+    │   │               ├── config
+    │   │               │   └── MybatisConfig.java
+    │   │               └── main
+    │   │                   ├── controller
+    │   │                   │   └── MainController.java
+    │   │                   ├── model
+    │   │                   │   ├── dao
+    │   │                   │   │   └── MainDAO.java
+    │   │                   │   └── dto
+    │   │                   │       ├── ContentDTO.java
+    │   │                   │       ├── PoemDTO.java
+    │   │                   │       ├── QuizAnswerDTO.java
+    │   │                   │       └── QuizDTO.java
+    │   │                   └── service
+    │   │                       └── MainService.java
+    │   └── resources
+    │       ├── application.properties
+    │       ├── mapper
+    │       │   ├── CmuMapper.xml
+    │       │   ├── MainMapper.xml
+    │       │   └── TestMapper.xml
+    │       ├── mybatis-config.xml
+    │       ├── static
+    │       │   ├── css
+    │       │   │   ├── add.css
+    │       │   │   ├── content.css
+    │       │   │   ├── detail.css
+    │       │   │   ├── list.css
+    │       │   │   ├── main.css
+    │       │   │   └── update.css
+    │       │   ├── img
+    │       │   │   ├── nangman.jpeg
+    │       │   │   └── nangman.jpg
+    │       │   └── index.html
+    │       └── templates
+    │           ├── common
+    │           │   ├── footer.html
+    │           │   └── header.html
+    │           ├── community
+    │           │   ├── add.html
+    │           │   ├── addForm.html
+    │           │   ├── detail.html
+    │           │   ├── errorPage.html
+    │           │   ├── list.html
+    │           │   └── update.html
+    │           └── main
+    │               ├── content.html
+    │               └── main.html
  
  ```
 
