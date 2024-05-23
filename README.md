@@ -241,38 +241,54 @@
       
 | 메인화면 |
 |--------|
-|![main]()|
+|![main](https://github.com/2024-literacy-project/2024-literacy-project/assets/129252557/f9f86255-4894-4d5d-b9a0-1e5ea927e7e0)|
 
-
-
-
-
+ 
+ 
 ### ② 글 상세 페이지 
 - 오늘의 주제에 대한 상세 글 표시
 - 날짜마다 새로 업데이트 되는 글
   
+| 글 상세 페이지 |
+|--------|
+|![detail](https://github.com/2024-literacy-project/2024-literacy-project/assets/129252557/6fa932db-36e9-4666-a884-de14a9c46932)|
 
 ### ③ 질문방 게시판 기능
 - 질문 게시판 ( 글 제목,  글 내용(일부분), 작성자 , 수정 ,삭제)
 - 글 제목 누르면 상세 페이지 이동  
   - DB에 등록된 회원 닉네임으로 글 쓰기 작성
 - 글 쓰기 버튼으로 글 추가 페이지
+ 
+| 질문 게시판 |
+|--------|
+|![question board](https://github.com/2024-literacy-project/2024-literacy-project/assets/129252557/3b7126f9-eee6-4c46-87eb-9ea206089c4f)|
 
 ### ④ 질문방 추가/수정 페이지
  - 글 제목, 작성자(회원 닉네임) , 글 내용, 날짜
    - 작성, 취소 버튼으로 추가/수정 기능 구현
 
+| 질문 추가 페이지 |
+|--------|
+|![add](https://github.com/2024-literacy-project/2024-literacy-project/assets/129252557/f9f86255-4894-4d5d-b9a0-1e5ea927e7e0)|
+
+| 질문 수정 페이지 |
+|--------|
+|![update](https://github.com/2024-literacy-project/2024-literacy-project/assets/129252557/f9f86255-4894-4d5d-b9a0-1e5ea927e7e0)|
+
+
 ### ⑤ 상세페이지 댓글 기능
 - 질문방에 작성한 글 내용에 대한 댓글 추가/삭제 기능 
   - DB에 저장된 닉네임 값으로 댓글 작성 
 
+| 상세페이지 댓글 추가 페이지 |
+|--------|
+|![상세페이지](https://github.com/2024-literacy-project/2024-literacy-project/assets/129252557/955b6a34-f333-41a9-9a37-334d356a8890)|
 
 
 
 
 
-
-
+ 
 
   
 
