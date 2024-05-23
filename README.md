@@ -164,13 +164,14 @@
 #### 😼안홍영
  ![image](https://github.com/2024-literacy-project/2024-literacy-project/assets/129252557/e19d9de0-60ea-4410-b57e-373b0708c76f)
  
-- 구현 기능
-- 구현 기능
+- main 화면 및 기능 구현
+- main css 구성
+
   
 #### 😝김민수
  ![image](https://github.com/2024-literacy-project/2024-literacy-project/assets/129252557/f26f3eb3-f090-4131-8562-6f719d0e3606)
-- 구현 기능
-- 구현 기능
+- main 화면 구성 및 DB 연결
+- main css 구성
 
 ## 2.커뮤니티 게시판
 ### 담당: 진윤재 , 박세연
