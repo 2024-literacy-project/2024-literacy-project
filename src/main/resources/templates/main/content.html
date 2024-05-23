@@ -8,9 +8,9 @@
 <body>
 
     <header>
-
         <p style="display: inline;" class="today-content">「 오늘의 글 」</p>
         <p style="display: inline;" class="nangman">浪漫</p>
+        <p th:text="${#temporals.format(localDateTime, 'yyyy.MM.dd')}"></p>
     </header>
 
     <div class="box">
@@ -19,13 +19,19 @@
         </div>
 
         <div class="content-body">
-            <h3 th:text="${listContent[0].contents_topic}"></h3>
+
+            <p class="topic" th:text="${listContent[0].contents_topic}"></p>
 
             <hr>
 
-            <p th:text="${listContent[0].contents_txt}"></p>
+            <p class="content" th:text="${listContent[0].contents_txt}"></p>
         </div>
     </div>
+
+    <!-- ========== footer ========== -->
+    <footer th:insert="~{/common/footer :: footerFragment}">
+        <h1>FOOTER</h1>
+    </footer>
 
 </body>
 </html>

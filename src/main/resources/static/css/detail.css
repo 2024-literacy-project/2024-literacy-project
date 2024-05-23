@@ -1,6 +1,6 @@
-html{
-    width: 393px;
-
+html {
+    width: 100vw;
+    height: 100vw;
 }
 
 body{
@@ -9,51 +9,42 @@ body{
 
     /*background-image: url("../img/nangman.jpeg");*/
     /*background-size: auto 300px;*/
-
 }
 
-h1{
+.list-title {
     /*background-color: skyblue;*/
+    font-size: 100px;
     color: white;
+    padding-top: 50px;
 }
 
 .container {
-    border: 1px solid lightgray;
+    height: auto;
+    margin: 70px 70px 0px 70px;
+    border: 2px solid #D9D9D9;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px gray;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 20px;
+    box-shadow: 3px 5px 5px grey;
 }
 
 section{
     display: inline-block;
     justify-content: center;
     margin: 20px 20px 0px 20px;
-
 }
 .image{
     width: 100%;
-    height: 150px;
+    height: 470px;
     background-image: url("../img/nangman.jpeg");
     background-size: cover;
+    margin-bottom: 20px;
 }
 /**/
 .Qboard{
+    height: auto;
     border: 1px solid lightgray;
-    /*width: 90%;*/
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    /*text-align: center;*/
-    /*display: flex;*/
-    /*justify-content: center;*/
+    margin: 50px;
     border-radius: 20px;
-    background-color: white;
-    box-shadow: 3px 3px 3px gray;
+    padding-bottom: 40px;
 }
 .Qboard-child{
     margin: 0 auto;
@@ -76,13 +67,20 @@ section{
     /*border-top: 1px solid gray;*/
 }
 
+.comment-list, .comment-write {
+    font-size: 35px;
+    font-weight: bold;
+}
+
 /**/
 th{
     width: 150px;
+    font-size: 35px;
 }
 td{
     width: 400px;
     height: 30px;
+    font-size: 35px;
 }
 th, td{
     border-bottom: 1px solid lightgray;
@@ -104,33 +102,31 @@ th, td{
 }
 
 .btn-delete {
-    margin-bottom: 15px;
-    margin-left: 15px;
+    padding: 10px 20px 10px 20px;
     border: 2px solid #D9D9D9;
-    font-size: 13px;
+    font-size: 25px;
     color: #5C5C5C;
     background-color: rgba(242, 255, 255, 0.5);
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .btn-update {
-    margin-bottom: 15px;
-    margin-left: 15px;
+    padding: 10px 20px 10px 20px;
     border: 2px solid #D9D9D9;
-    font-size: 13px;
+    font-size: 25px;
     color: #5C5C5C;
     background-color: rgba(242, 255, 255, 0.5);
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .comment-btn {
-    margin-bottom: 15px;
-    margin-left: 15px;
+    padding: 10px 20px 10px 20px;
     border: 2px solid #D9D9D9;
-    font-size: 10px;
+    font-size: 25px;
     color: #5C5C5C;
     background-color: rgba(242, 255, 255, 0.5);
-    border-radius: 8px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 /* ========== 댓글 ========== */
@@ -145,6 +141,7 @@ th, td{
 
     width: 90%;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .Cboard-list-table{
     border-collapse: collapse;
@@ -180,16 +177,20 @@ th, td{
 
 /**/
 .btn-list{
-    margin-top: 20px;
-    margin-bottom: 15px;
-    margin-left: 15px;
+    margin-top: 50px;
+    padding: 10px 20px 10px 20px;
     border: 2px solid #D9D9D9;
-    font-size: 10px;
+    font-size: 25px;
     color: #5C5C5C;
     background-color: rgba(242, 255, 255, 0.5);
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .tbody {
     font-size: 12px;
+}
+
+footer {
+    text-align: center;
+    color: #777777;
 }

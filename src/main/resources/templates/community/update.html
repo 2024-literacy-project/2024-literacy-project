@@ -18,12 +18,13 @@
     <header th:replace="~{/common/header :: headerFragment}">
         <h1>HEADER</h1>
     </header>
-    <h1>게시글 수정</h1>
+    <p class="list-title">『 게시글 수정 』</p>
 </div>
 
 <!---->
 <form action="/community/update" method="post">
 
+<div class="container">
 <section>
     <div class="Qboard">
         <div class="Qboard-child">
@@ -51,19 +52,20 @@
                         <td><input type="text" name="question_date" th:value="${cmu.question_date}" required class="tbl-date"></td>
                     </tr>
                 </table>
+            </div>
 
         </div>
     </div>
 
         <div class="div-btn">
-            <button type="submit">수정</button>
-            <button>
-                <a href="/community/list">취소</a>
+            <button class="add-btn" type="submit">수정</button>
+            <button class="cancel-btn">
+                <a style="text-decoration-line: none;" href="/community/list">취소</a>
             </button>
         </div>
         <!--            -->
-    </div>
 </section>
+</div>
 
 </form>
 
