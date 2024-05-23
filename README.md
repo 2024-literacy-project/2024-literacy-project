@@ -269,11 +269,12 @@
 
 | 질문 추가 페이지 |
 |--------|
-|![add](https://github.com/2024-literacy-project/2024-literacy-project/assets/129252557/f9f86255-4894-4d5d-b9a0-1e5ea927e7e0)|
+|![add](https://github.com/2024-literacy-project/2024-literacy-project/assets/129252557/8286e49d-e1fa-409a-9498-f0947a2c312f)|
 
 | 질문 수정 페이지 |
 |--------|
-|![update](https://github.com/2024-literacy-project/2024-literacy-project/assets/129252557/f9f86255-4894-4d5d-b9a0-1e5ea927e7e0)|
+|![update](https://github.com/2024-literacy-project/2024-literacy-project/assets/129252557/af1267ce-d24f-4c06-8ac4-e0910dd1323d)|
+
 
 
 ### ⑤ 상세페이지 댓글 기능
