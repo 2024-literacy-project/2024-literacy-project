@@ -251,7 +251,7 @@
   
 | 글 상세 페이지 |
 |--------|
-|![detail](https://github.com/2024-literacy-project/2024-literacy-project/assets/129252557/6fa932db-36e9-4666-a884-de14a9c46932)|
+|![detail](https://github.com/2024-literacy-project/2024-literacy-project/assets/129252557/e7502cd4-97a0-4f3b-ac53-092b5397439e)|
 
 ### ③ 질문방 게시판 기능
 - 질문 게시판 ( 글 제목,  글 내용(일부분), 작성자 , 수정 ,삭제)
