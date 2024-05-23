@@ -261,7 +261,7 @@
  
 | 질문 게시판 |
 |--------|
-|![question board](https://github.com/2024-literacy-project/2024-literacy-project/assets/129252557/3b7126f9-eee6-4c46-87eb-9ea206089c4f)|
+|![question board](https://github.com/2024-literacy-project/2024-literacy-project/assets/129252557/e21260c8-0c55-4550-81ff-dd043e9349cb)|
 
 ### ④ 질문방 추가/수정 페이지
  - 글 제목, 작성자(회원 닉네임) , 글 내용, 날짜
