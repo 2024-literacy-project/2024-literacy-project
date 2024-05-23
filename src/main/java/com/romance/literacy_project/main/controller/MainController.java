@@ -11,7 +11,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -39,17 +38,6 @@ public class MainController {
         return mv;
     }
 
-//    @PostMapping("submit")
-//    public String submitQuizAnswer(@RequestParam String selected_option,
-//                                   @RequestParam String mem_nick, Model model) {
-//        List<QuizDTO> listQuiz = mainService.getAllQuizList();
-//        boolean is_correct = selected_option.equals(listQuiz.get(0).getQuiz_answer());
-//
-//        model.addAttribute("is_correct", is_correct);
-//        model.addAttribute("listQuiz", listQuiz);
-//        return "quizResult";
-//
-//    }
 
     @RequestMapping("/content")
     public ModelAndView content() throws Exception {
