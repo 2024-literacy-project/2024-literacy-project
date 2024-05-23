@@ -1,5 +1,5 @@
 
-https://github.com/2024-literacy-project/2024-literacy-project/assets/129252557/7eb9a7c3-4b29-40fb-8c0f-9346e2ea5d25
+
 
 # 📚문해력 향상 서비스 앱 'Rommance Read'
 
@@ -240,8 +240,8 @@ https://github.com/2024-literacy-project/2024-literacy-project/assets/129252557/
     - 오늘의 퀴즈 정답 창을 누르면 정답이 나옵니다.
       
 | 메인화면 |
-|----------|
-|![main]()|  
+|--------|
+|![main]()|
 
 
 
