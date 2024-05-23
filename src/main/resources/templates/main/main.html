@@ -8,13 +8,13 @@
 
 <body>
     <header>
-        <h1>「 浪漫 」</h1>
+        <p class="main-title">「 浪漫 」</p>
     </header>
 
     <main>
         <!-- content -->
         <div class="content-box">
-            <h3 class="today-content">오늘의 글</h3>
+            <p class="today-content">오늘의 글</p>
             <!--        <p th:text="${listContent[1].contents_topic}"></p>-->
             <div class="title-button">
                 <p class="quotes" style="display: inline;" >‟</p>
@@ -29,8 +29,7 @@
         <!-- quiz -->
         <div class="quiz">
 
-            <h3 class="today-quiz">오늘의 퀴즈</h3>
-
+            <p class="today-quiz">오늘의 퀴즈</p>
 
             <p class="quiz-question" th:text="${listQuiz[0].quiz_question}"></p>
 
@@ -42,8 +41,9 @@
                 <p class="quiz-select2" th:text="${listQuiz[0].quiz_select2}"></p>
             </div>
 
-            <button onclick="btnClick()">정답보기</button>
-            <p>정답은~~~~~?</p>
+            <div class="ans-btn">
+                <button class="answer-btn" onclick="btnClick()">정답보기</button>
+            </div>
             <div id='my-div' th:text="${listQuiz[0].quiz_answer}"></div>
 
             <script>
@@ -66,7 +66,7 @@
         <!-- poem -->
         <div class="poem">
 
-            <h3 class="today-poem">오늘의 시</h3>
+            <p class="today-poem">오늘의 시</p>
 
             <div class="box">
                 <p class="poem-title" th:text="${listPoem[0].poem_title}"></p>
@@ -86,8 +86,10 @@
 
     </main>
 
-    <footer>
-        <h5>나는야 footer</h5>
+    <!-- ========== footer ========== -->
+    <footer th:insert="~{/common/footer :: footerFragment}">
+        <h1>FOOTER</h1>
     </footer>
+
 </body>
 </html>
