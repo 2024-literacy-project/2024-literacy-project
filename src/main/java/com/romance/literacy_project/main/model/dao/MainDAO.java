@@ -15,6 +15,6 @@ public interface MainDAO {
     List<ContentDTO> getAllContentList();
     List<QuizDTO> getAllQuizList();
 
-    void updateQuizAnswer(QuizAnswerDTO quizAnswerDTO);
+//    void updateQuizAnswer(QuizAnswerDTO quizAnswerDTO);
 
 }

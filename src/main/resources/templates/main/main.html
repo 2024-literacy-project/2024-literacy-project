@@ -18,7 +18,7 @@
             <!--        <p th:text="${listContent[1].contents_topic}"></p>-->
             <div class="title-button">
                 <p class="quotes" style="display: inline;" >‟</p>
-                <button  class="title" onclick="location.href='content'" th:text="${listContent[0].contents_topic}"></button>
+                <button class="title" onclick="location.href='content'" th:text="${listContent[0].contents_topic}"></button>
                 <p class="quotes" style="display: inline;" >„</p>
             </div>
         </div>
@@ -31,18 +31,17 @@
 
             <h3 class="today-quiz">오늘의 퀴즈</h3>
 
-            <form action="submit" method="post">
-                <p class="quiz-question" th:text="${listQuiz[0].quiz_question}"></p>
 
-                <div class="quizbox">
-                    <p class="quiz-select1" th:text="${listQuiz[0].quiz_select1}"></p>
-                </div>
-                <br>
-                <div class="quizbox2">
-                    <p class="quiz-select2" th:text="${listQuiz[0].quiz_select2}"></p>
-                </div>
+            <p class="quiz-question" th:text="${listQuiz[0].quiz_question}"></p>
 
-            </form>
+            <div class="quizbox">
+                <p class="quiz-select1" th:text="${listQuiz[0].quiz_select1}"></p>
+            </div>
+            <br>
+            <div class="quizbox2">
+                <p class="quiz-select2" th:text="${listQuiz[0].quiz_select2}"></p>
+            </div>
+
 
         </div>
 

@@ -43,7 +43,7 @@ public class MainService {
         return mainDAO.getAllQuizList();
     }
 
-    public void saveAnswer(QuizAnswerDTO quizAnswerDTO) {
-        mainDAO.updateQuizAnswer(quizAnswerDTO);
-    }
+//    public void saveAnswer(QuizAnswerDTO quizAnswerDTO) {
+//        mainDAO.updateQuizAnswer(quizAnswerDTO);
+//    }
 }
