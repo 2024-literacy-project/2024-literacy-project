@@ -241,7 +241,7 @@
       
 | 메인화면 |
 |--------|
-|![main](https://github.com/2024-literacy-project/2024-literacy-project/assets/129252557/f9f86255-4894-4d5d-b9a0-1e5ea927e7e0)|
+|![main](https://github.com/2024-literacy-project/2024-literacy-project/assets/129252557/ffefb0d3-ba63-4f39-8976-0f5d2cf525a5)|
 
  
  
