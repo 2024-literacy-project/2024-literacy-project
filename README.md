@@ -5,10 +5,13 @@
 
 ![readme_mockup2](https://github.com/2024-literacy-project/2024-literacy-project/assets/129252557/eb271755-76d0-4bd3-aaf5-5cf3eadfaa03)
 
-<h1>팀: 🌊 낭만독해</h1>
+
+                  
 
 
+<h1>팀명:</h1>
 
+ ![KakaoTalk_Photo_2024-05-21-23-04-18 001](https://github.com/2024-literacy-project/2024-literacy-project/assets/129252557/34197657-d763-4ad9-b5c4-9ee1485ed48a)
 
  
 
