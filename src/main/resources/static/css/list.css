@@ -27,7 +27,7 @@ section{
 }
 /**/
 .Qboard{
-    border: 1px solid white;
+    border: 1px solid lightgray;
     /*width: 90%;*/
     padding-top: 20px;
     padding-bottom: 20px;

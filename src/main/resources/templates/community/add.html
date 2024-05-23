@@ -8,12 +8,20 @@
 </head>
 <body>
 <!-- ========== header ========== -->
-<header th:replace="~{/common/header :: headerFragment}">
-  <h1>HEADER</h1>
-</header>
+<!--<header th:replace="~{/common/header :: headerFragment}">-->
+<!--  <h1>HEADER</h1>-->
+<!--</header>-->
 
 <!-- ========== contents ========== -->
-<h1>새 글 작성</h1>
+<!-- header -->
+<div class="image">
+  <header th:replace="~{/common/header :: headerFragment}">
+    <h1>HEADER</h1>
+  </header>
+  <h1>새 글 작성</h1>
+</div>
+
+<!---->
 <form action="/community/add" method="post">
 
   <section>
@@ -24,19 +32,19 @@
           <table class="Qboard-list-table">
             <tr>
               <th>제목</th>
-              <td><input type="text" name="question_title" required></td>
+              <td><input type="text" name="question_title" class="tbl-title" required></td>
             </tr>
             <tr>
               <th>작성자</th>
-              <td><input type="text" name="mem_nick" required></td>
+              <td><input type="text" name="mem_nick" class="tbl-mem" required></td>
             </tr>
             <tr>
               <th>내용</th>
-              <td><textarea name="question_txt" rows="10" required></textarea></td>
+              <td><textarea name="question_txt" rows="10" class="tbl-txt" required></textarea></td>
             </tr>
             <tr>
               <th>날짜</th>
-              <td><input type="text" name="question_date" required></td>
+              <td><input type="text" name="question_date" placeholder="2024-01-01" class="tbl-date" required></td>
             </tr>
           </table>
 
@@ -50,9 +58,9 @@
         </button>
       </div>
 
-    <!--            -->
-  </div>
-</section>
+      <!--            -->
+    </div>
+  </section>
 
 </form>
 

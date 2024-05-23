@@ -1,8 +1,13 @@
+html{
+    width: 393px;
+
+}
+
 body{
     margin: 0 auto;
     text-align: center;
 
-    background-image: url("../img/nangman.jpeg");
+    /*background-image: url("../img/nangman.jpeg");*/
     /*background-size: auto 300px;*/
 
 }
@@ -15,9 +20,15 @@ section{
     display: inline-block;
     justify-content: center;
 }
+.image{
+    width: 100%;
+    height: 150px;
+    background-image: url("../img/nangman.jpeg");
+    background-size: cover;
+}
 /**/
 .Qboard{
-    border: 1px solid white;
+    border: 1px solid lightgray;
     /*width: 90%;*/
     padding-top: 20px;
     padding-bottom: 20px;
@@ -66,20 +77,20 @@ th, td{
 
 /**/
 .tbl-title{
-    width: 280px;
+    width: 95%;
     height: 20px;
 }
 .tbl-mem{
-    width: 280px;
+    width: 95%;
     height: 20px;
 }
 .tbl-txt{
-    width: 280px;
+    width: 95%;
     height: 200px;
 
 }
 .tbl-date{
-    width: 280px;
+    width: 95%;
     height: 20px;
 }
 

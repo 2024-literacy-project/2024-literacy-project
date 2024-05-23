@@ -9,12 +9,20 @@
 <body>
 
 <!-- ========== header ========== -->
-<header th:replace="~{/common/header :: headerFragment}">
-  <h1>HEADER</h1>
-</header>
+<!--<header th:replace="~{/common/header :: headerFragment}">-->
+<!--  <h1>HEADER</h1>-->
+<!--</header>-->
 
 <!-- ========== contents ========== -->
-<h1>게시글 상세</h1>
+<!-- header -->
+<div class="image">
+  <header th:replace="~{/common/header :: headerFragment}">
+    <h1>HEADER</h1>
+  </header>
+  <h1>게시글 상세</h1>
+</div>
+
+<!---->
 
 <section>
   <div class="Qboard">
@@ -44,9 +52,9 @@
     </div>
 
     <div class="div-btn">
-      <button class="btn-list">
-        <a href="/community/list">목록으로</a>
-      </button>
+<!--      <button class="btn-list">-->
+<!--        <a href="/community/list">목록으로</a>-->
+<!--      </button>-->
       <button class="btn-update">
         <a th:href="@{/community/update/{id}(id=${cmu.question_no})}">수정</a>
       </button>
@@ -56,16 +64,19 @@
     </div>
 
 <!--  ========== 댓글 ==========  -->
+<h3>댓글 목록</h3>
+
+<div class="Cboard-child1">
 <div>
-  <h2>댓글 목록</h2>
-  <table border="2">
+
+  <table class="Cboard-list-table">
     <thead>
     <tr>
      <!-- <th>질문번호</th>-->
-      <th>댓글 번호</th>
-      <th>작성자</th>
-      <th>댓글</th>
-      <th>관리</th>
+      <th class="ctbl-no">댓글 번호</th>
+      <th class="ctbl-mem">작성자</th>
+      <th class="ctbl-c">댓글</th>
+      <th class="ctbl-btn">관리</th>
       <!--<th>작성일</th>-->
     </tr>
     </thead>
@@ -76,15 +87,23 @@
       <td th:text="${comment.mem_nick}"></td>
       <td th:text="${comment.comment_txt}"></td>
       <td>
-          <a th:href="@{/community/deleteComment/{id}(id=${comment.comment_no})}" onclick="return confirm('정말 삭제하시겠습니까?');">삭제</a>
+          <button>
+            <a th:href="@{/community/deleteComment/{id}(id=${comment.comment_no})}" onclick="return confirm('정말 삭제하시겠습니까?');">삭제</a>
+          </button>
       </td>
       <!--<td th:text="${comment.comment_date}"></td>-->
     </tr>
     </tbody>
   </table>
+</div>
+</div>
 
-  <!-- 댓글 작성 폼 -->
-  <h2>댓글 작성</h2>
+<!-- 댓글 작성 폼 -->
+<h3>댓글 작성</h3>
+
+<div class="Cboard-child2">
+<div>
+
   <form action="/community/addComment" method="post">
     <table>
       <!-- 현재 게시글 번호를 숨겨진 필드로 전송 -->
@@ -92,13 +111,13 @@
 
       <!-- 댓글 작성자 닉네임 -->
       <tr>
-        <th><label for="mem_nick">작성자:</label></th>
+        <th><label for="mem_nick">작성자</label></th>
         <td><input type="text" id="mem_nick" name="mem_nick" required /></td>
       </tr>
 
       <!-- 댓글 내용 -->
       <tr>
-        <th><label for="comment_txt">댓글:</label></th>
+        <th><label for="comment_txt">댓글</label></th>
         <td><textarea id="comment_txt" name="comment_txt" required></textarea></td>
       </tr>
 
@@ -109,12 +128,19 @@
       </tr>-->
       <!-- 댓글 제출 버튼 -->
       <tr>
-        <td colspan="2"><button type="submit">댓글 추가</button></td>
+        <td colspan="2">
+          <button type="submit">댓글 추가</button>
+        </td>
       </tr>
     </table>
   </form>
 
 </div>
+</div>
+<!---->
+    <button class="btn-list">
+      <a href="/community/list">목록으로</a>
+    </button>
     <!--    -->
   </div>
 </section>
