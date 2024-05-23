@@ -1,0 +1,149 @@
+html {
+    width: 393px;
+}
+
+body {
+    margin: 0px;
+}
+
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+header {
+    background-image: url("../img/nangman.jpg");
+    background-size: cover;
+    text-align: center;
+    padding: 40px;
+    margin: 0px;
+}
+
+h1{
+    color: white;
+}
+
+.today-content {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.title {
+    border: none;
+    background: none;
+    font-size: 32px;
+    color: #5C5C5C;
+    font-weight: bold;
+}
+
+.title-button {
+    text-align: center;
+}
+
+.quotes {
+    font-size: 34px;
+}
+
+.content-box {
+    margin-bottom: 40px;
+}
+
+/* 오늘의 시 CSS */
+.today-poem {
+    margin-top: 30px;
+}
+
+.box{
+    margin: 10px 20px 35px 20px;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    background-color: rgba(242, 255, 255, 0.5);
+    box-shadow: 0px 2px 2px grey;
+}
+
+.poem-title {
+    font-size: 18px;
+    text-align: center;
+}
+
+.poem-txt {
+    font-size: 15px;
+    text-align: center;
+}
+
+.poet {
+    font-size: 13px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+/* 오늘의 퀴즈 CSS */
+
+#my-div{
+    font-size: 30px;
+    display: none;
+}
+
+.quiz {
+    margin-bottom: 35px;
+}
+
+.today-quiz {
+    margin-top: 30px;
+}
+.quiz-question {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.quizbox {
+    padding-bottom: 1px;
+    padding-top: 1px;
+    border: none;
+    background-color: #F5F5F5;
+}
+.quizbox2 {
+    padding-bottom: 1px;
+    padding-top: 1px;
+    border: none;
+    background-color: #F5F5F5;
+}
+
+.quiz-select1 {
+    margin-left: 10px;
+}
+
+.quiz-select2 {
+    margin-left: 10px;
+}
+
+
+
+/* 버튼 CSS*/
+
+.btn {
+    margin-top: 27px;
+    margin-bottom: 27px;
+}
+
+.question-button {
+    margin-left: 15px;
+    padding: 20px 133px 20px 133px;
+    border: 2px solid #D9D9D9;
+    font-size: 20px;
+    color: #5C5C5C;
+    background-color: rgba(242, 255, 255, 0.5);
+    border-radius: 10px;
+
+}
+
+.community-button {
+    margin-right: 10px;
+    padding: 20px 40px 20px 40px;
+    border: 2px solid #D9D9D9;
+    font-size: 20px;
+    color: #5C5C5C;
+    background-color: rgba(242, 255, 255, 0.5);
+    border-radius: 10px;
+}

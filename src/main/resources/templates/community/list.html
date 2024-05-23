@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>게시판 목록</title>
+<!--  <link rel="stylesheet" href="../../static/css/list.css">-->
+<!--  <link rel="stylesheet" href="list.css">-->
+  <link rel="stylesheet" type="text/css" th:href="@{/css/list.css}"/>
+  <style>
+    header {
+      /*color: coral;*/
+    }
+
+    footer {
+      /*color: aquamarine;*/
+    }
+  </style>
+</head>
+<body>
+<!-- ========== header ========== -->
+<!--<header th:replace="~{/common/header :: headerFragment}">-->
+<!--  <h1>HEADER</h1>-->
+<!--</header>-->
+
+<!-- ========== contents ========== -->
+<div class="image">
+  <header th:replace="~{/common/header :: headerFragment}">
+    <h1>HEADER</h1>
+  </header>
+  <h1>질문방</h1>
+</div>
+<!---->
+
+
+<!--<section>-->
+<!--  <div class="Qboard">-->
+<!--    <div class="Qboard-child">-->
+<!--      <div>-->
+<!--        <table class="Qboard-list-table">-->
+          <!-- thead -->
+<!--          <thead>-->
+<!--          <tr>-->
+<!--            <th class="table-list-1">No.</th>-->
+<!--            <th class="table-list-2">제목</th>-->
+<!--            <th class="table-list-3">작성자</th>-->
+<!--&lt;!&ndash;            <th class="table-list-4">작성일</th>&ndash;&gt;-->
+<!--            <th class="table-list-5">관리</th>-->
+<!--          </tr>-->
+<!--          </thead>-->
+
+          <!-- tbody -->
+<!--          <tbody>-->
+<!--          <tr class="tbody-tr" th:each="cmu : ${cmuList}">-->
+<!--            <td th:text="${cmu.question_no}">1</td>-->
+<!--            <td><a style="text-decoration-line: none;" th:href="@{/community/detail/{id}(id=${cmu.question_no})}" th:text="${cmu.question_title}">제목</a></td>-->
+<!--            <td th:text="${cmu.mem_nick}">작성자</td>-->
+<!--&lt;!&ndash;            <td th:text="${cmu.question_date}">2024-05-22</td>&ndash;&gt;-->
+<!--            <td>-->
+<!--              <div class="btn">-->
+<!--                <button class="btn">-->
+<!--                  <a style="text-decoration-line: none;" th:href="@{/community/update/{id}(id=${cmu.question_no})}">수정</a>-->
+<!--                </button>-->
+<!--&lt;!&ndash;                &nbsp&ndash;&gt;-->
+<!--                <button class="btn">-->
+<!--                  <a style="text-decoration-line: none;" th:href="@{/community/delete/{id}(id=${cmu.question_no})}" onclick="return confirm('정말 삭제하시겠습니까?');">삭제</a>-->
+<!--                </button>-->
+<!--              </div>-->
+<!--            </td>-->
+<!--          </tr>-->
+<!--          </tbody>-->
+
+<!--        </table>-->
+<!--      </div>-->
+<!--    </div>-->
+    <!--  -->
+    <div class="list-bigBox">
+        <div class="list-box">
+            <div th:each="cmu : ${cmuList}">
+                <div class="list-div">
+                    <p class="list-title"><a style="text-decoration-line: none;" th:href="@{/community/detail/{id}(id=${cmu.question_no})}" th:text="${cmu.question_title}">제목</a></p>
+                    <div class="list-txt-box">
+                        <p class="list-txt" th:text="${cmu.question_txt}"></p>
+                    </div>
+                    <div class="list-nick">
+                        <p style="display: inline;" th:text="${cmu.mem_nick}">작성자</p>
+                        <div class="btn">
+                            <button class="btn">
+                              <a style="text-decoration-line: none;" th:href="@{/community/update/{id}(id=${cmu.question_no})}">| &nbsp&nbsp 수정 &nbsp&nbsp |</a>
+                            </button>
+            <!--                &nbsp-->
+                            <button class="btn">
+                              <a style="text-decoration-line: none;" th:href="@{/community/delete/{id}(id=${cmu.question_no})}" onclick="return confirm('정말 삭제하시겠습니까?');">삭제</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+              <hr>
+            </div>
+        </div>
+
+        <button class="new-contents-btn">
+          <a style="text-decoration-line: none;" href="/community/add">글쓰기</a>
+        </button>
+    </div>
+
+
+
+<!--  </div>-->
+<!--</section>-->
+
+<!-- ========== footer ========== -->
+<footer th:insert="~{/common/footer :: footerFragment}">
+  <h1>FOOTER</h1>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}" />
+</head>
+
+<body>
+    <header>
+        <h1>「 浪漫 」</h1>
+    </header>
+
+    <main>
+        <!-- content -->
+        <div class="content-box">
+            <h3 class="today-content">오늘의 글</h3>
+            <!--        <p th:text="${listContent[1].contents_topic}"></p>-->
+            <div class="title-button">
+                <p class="quotes" style="display: inline;" >‟</p>
+                <button class="title" onclick="location.href='content'" th:text="${listContent[0].contents_topic}"></button>
+                <p class="quotes" style="display: inline;" >„</p>
+            </div>
+        </div>
+        <br>
+
+        <hr>
+
+        <!-- quiz -->
+        <div class="quiz">
+
+            <h3 class="today-quiz">오늘의 퀴즈</h3>
+
+
+            <p class="quiz-question" th:text="${listQuiz[0].quiz_question}"></p>
+
+            <div class="quizbox">
+                <p class="quiz-select1" th:text="${listQuiz[0].quiz_select1}"></p>
+            </div>
+            <br>
+            <div class="quizbox2">
+                <p class="quiz-select2" th:text="${listQuiz[0].quiz_select2}"></p>
+            </div>
+
+            <button onclick="btnClick()">정답보기</button>
+            <p>정답은~~~~~?</p>
+            <div id='my-div' th:text="${listQuiz[0].quiz_answer}"></div>
+
+            <script>
+                function btnClick() {
+                    const mydiv = document.getElementById('my-div');
+
+                    if(mydiv.style.display === 'none') {
+                        mydiv.style.display = 'block';
+                    }else {
+                        mydiv.style.display = 'none';
+                    }
+                }
+            </script>
+
+
+        </div>
+
+        <hr>
+
+        <!-- poem -->
+        <div class="poem">
+
+            <h3 class="today-poem">오늘의 시</h3>
+
+            <div class="box">
+                <p class="poem-title" th:text="${listPoem[0].poem_title}"></p>
+                <p class="poem-txt" th:text="${listPoem[0].poem_txt}"></p>
+                <p class="poet" th:text="${listPoem[0].poet}"></p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="btn">
+            <button class="question-button" onclick="location.href='community/list'">질문방</button>
+<!--            <button class="community-button">대화장</button>-->
+        </div>
+
+        <hr>
+
+    </main>
+
+    <footer>
+        <h5>나는야 footer</h5>
+    </footer>
+</body>
+</html>
